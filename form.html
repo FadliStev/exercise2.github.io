@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/form.css">
+    <title>Form Konfirmasi Tiket</title>
+</head>  
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Form Klaim Tiket</h3>
+        </div>
+        <div class="content">
+    <form id="form">
+        <label for="nama">Nama</label><br>
+        <input type="text" placeholder="Nama anda" id="nama"><br><br>
+        <label for="Tanggal">Tanggal Pemesanan</label><br>
+        <input type="Date" name="Tanggal" id="tanggal"><br><br>
+        <label for="jenis">Jenis Tiket</label><br>
+        <select name="jenis" id="jen">
+            <option value="Vip">Vip</option>
+            <option value="Class1">Class 1</option>
+            <option value="Class2">Class 2</option>
+            <option value="Class3">Class 3</option>
+        </select><br>
+        <p>Pemilihan Tempat Duduk</p>
+
+        <input type="radio" name="pemilihan" id="pertama" value="Pertama">
+        <label for="duduk">Baris Pertama</label><br>
+        <input type="radio" name="pemilihan" id="kedua" value="Kedua">
+        <label for="duduk">Baris Kedua</label><br>
+        <input type="radio" name="pemilihan" id="ketiga" value="Ketiga">
+        <label for="duduk">Baris Ketiga</label><br>
+        <input type="radio" name="pemilihan" id="keempat" value="keempat">
+        <label for="duduk">Baris Keempat</label><br><br>
+        <label for="">Alamat</label><br>
+        <textarea placeholder="Tulis Alamatmu di sini" name="alamat" id="alamat" cols="30" rows="10"></textarea><br><br>
+        <label for="">Tempat Kedatangan</label><br>
+        <textarea placeholder="Tulis Tempat Kedatangan di sini" name="tempat" id="tempat" cols="30" rows="10"></textarea><br><br>
+    </div>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+    <a href="script.js" onclick="kirimData()" class="button-kirim">Kirim</a>
+    <a href="index.html" class="back-button">Back</a>
+</body>
+
+</html>
